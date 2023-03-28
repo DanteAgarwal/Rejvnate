@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Email</title>
+</head>
+<body>
+    <h1>Contact Email</h1>
+    <p>Subject: {{ subject }}</p>
+    <p>Message: {{ message }}</p>
+    <p>Sender: {{ sender }}</p>
+    <hr>
+    <p>Thank you for your message!</p>
+    <p>We will get back to you as soon as possible.</p>
+    <p>- The MySite Team</p>
+    <hr>
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
+</body>
+</html>
