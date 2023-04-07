@@ -1,0 +1,120 @@
+{% extends 'inner_index.html' %}
+{% load static %}
+{% block title %}Naturopathy{% endblock title %}
+{% block page_level_css %}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  padding :50px 50px 50px;
+}
+
+.text {
+  width: 50%;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  justify-content: center;
+}
+.title-container {
+  background-position: center;
+  background-size: cover;
+  height: 600px; /* Adjust height as needed */
+  display: flex;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+.events {
+  padding-left: 80px;
+  padding-right:80px
+}
+{% endblock page_level_css %}
+{% block page_level_js %}{% endblock page_level_js %}
+{% block content %}
+<div class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <ol>
+          <li><a href="{% url 'Home' %}">Home</a></li>
+          <li><a href="{% url 'Services' %}">Services</a></li>
+          <li><a herf="{% url 'Services1' %}">Physiotherapy</a></li>
+        </ol>
+      </div>
+    </div>
+</div>
+<!--breadcrumbs ends-->
+<!--title-->
+<div class="container">
+<div class="title-container" style="background-image: url(/static/img/services_images/photo-1492892132812-a00a8b245c45.avif)">
+  <h1 class="title">Naturopathy</h1>
+</div></div>
+
+<div class="container container1 data-aos="fade-up"">
+  <img class="data-aos="fade-up" data-aos-delay="100"" src="{% static '/img/services_images/nature-1.jpg' %}">
+    <div class="text data-aos="fade-left" data-aos-delay="300"">
+      <p>Naturopathy is based on universal principal. Naturopathy working is our physically emotionally spirituality, inner body or outer body and our way of living style.</p>
+    </div>
+</div>
+
+<div class="container container1" data-aos="fade-up">
+  <div class="text" data-aos="fade-right" data-aos-delay="300">
+    <p>Naturopathy stimulates positive thinking, lowers stress, anxiety &amp; depression, improves overall healthy, improves one's ability to cope with health-related issues. It is an individualized treatment that aims at transforming one's overall well-being.</p>
+  </div>
+  <img data-aos="fade-up" data-aos-delay="100" src="{% static '/img/services_images/nature-2.jpg' %}">
+</div>
+<!--Gallary-->
+<section class="events">
+<div class="container-fluid" data-aos="fade-up">
+
+  <div class="section-header">
+    <p>Gallary</p>
+  </div>
+
+  <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/services_images/nature/1-pxkzsismaqfxl9zb6epzzc42uxly55j4q897jzyjyg.png);background-size:contain;">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/services_images/nature/2-pxkzt4ewnx9j0b3wo62f2onoisne26wyh79dld2hzc.png); background-size:contain;">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/services_images/nature/3-pxkztqz17y4eqy750ftgqiyqs1k76xeikax14051u0.png); background-size:contain;">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/services_images/nature/4-pxkzugcoch35gf69w8se3uk6tg33yr79nsj52h3f60.png);background-size:contain;">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/services_images/nature/5-pxkzv03abzu688dlozbk27kvajdtgedmqi8c5aa5jc.png);background-size:contain;">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/services_images/nature/6-pxkzvlpkp6nrn9i76qnz5k4gyef9dfrghh8i6ne3k8.png);background-size:contain;">
+      </div><!-- End Event item -->
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</div>
+</section>
+
+{% endblock content %}

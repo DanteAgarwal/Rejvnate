@@ -1,0 +1,94 @@
+{% extends 'inner_index.html' %}
+{% load static %}
+{% block title %}Diet &amp; Ayurveda{% endblock title %}
+{% block page_level_css %}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  padding :50px 50px 50px;
+}
+
+.text {
+  width: 50%;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.events {
+  padding-left: 80px;
+  padding-right:80px
+}
+{% endblock page_level_css %}
+{% block page_level_js %}{% endblock page_level_js %}
+{% block content %}
+<div class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Services</h2>
+        <ol>
+          <li><a href="{% url 'Home' %}">Home</a></li>
+          <li><a href="{% url 'Services' %}">Services</a></li>
+          <li><a herf="{% url 'Services1' %}">Physiotherapy</a></li>
+        </ol>
+      </div>
+    </div>
+</div>
+<!--breadcrumbs ends-->
+
+<div class="container container1 data-aos="fade-up"">
+  <img class="data-aos="fade-up" data-aos-delay="100"" src="{% static '/img/services_images/Physiotherapy.png' %}">
+<div class="text data-aos="fade-up" data-aos-delay="100"">
+  <p>Physiotherapists support people at all stages of life to recover from injury, reduce pain and stiffness, increase mobility and movement and maximize function and quality of life, incorporating physical, psychological, emotional and social wellbeing.</p>
+</div>
+</div>
+<!--Gallary-->
+<section class="events">
+<div class="container-fluid" data-aos="fade-up">
+
+  <div class="section-header">
+    <p>Gallary</p>
+  </div>
+
+  <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/menu/tear1.jpeg)">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/menu/tear2.jpeg)">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/menu/tear3.jpg)">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/menu/tear4.jpg)">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/menu/tear5.png)">
+      </div><!-- End Event item -->
+
+      <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(/static/img/menu/tear6.jpg)">
+      </div><!-- End Event item -->
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</div>
+</section>
+
+{% endblock content %}
